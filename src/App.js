@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { MyForm } from './ui-components'
 
 function App() {
   return (
+    <div> 
+     <MyForm onSubmit={fields => console.log(fields)} />
+    </div>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
